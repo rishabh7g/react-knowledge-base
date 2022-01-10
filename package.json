@@ -1,17 +1,26 @@
 {
-	"name": "@rishabh/monorepo-root",
-	"private": true,
-	"scripts": {
-		"start": "lerna exec --scope @rishabh/react-forms -- yarn start",
-		"build": "lerna exec --scope @rishabh/react-forms -- yarn build"
-	},
-	"devDependencies": {
-		"craco": "^0.0.3",
-		"lerna": "^4.0.0"
-	},
-	"workspaces": {
-		"packages": [
-			"packages/**"
-		]
-	}
+  "name": "@rishabh/monorepo-root",
+  "private": true,
+  "scripts": {
+    "start": "lerna exec --scope @rishabh/react-forms -- yarn start",
+    "build": "lerna exec --scope @rishabh/react-forms -- yarn build"
+  },
+  "devDependencies": {
+    "craco": "^0.0.3",
+    "husky": "^7.0.4",
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.1.7",
+    "prettier": "^2.5.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  }
 }
