@@ -1,2 +1,4 @@
 import { Button } from './components/button';
-export { Button };
+import * as util from './util';
+
+export { Button, util };

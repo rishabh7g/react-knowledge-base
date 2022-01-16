@@ -1,10 +1,9 @@
-import './App.css';
-import { Button } from '@rishabh/reusable-inventory';
+import { SimpleProjectForm } from './components/simple-project-form';
 
 function App() {
   return (
     <div className='App'>
-      <Button />
+      <SimpleProjectForm />
     </div>
   );
 }

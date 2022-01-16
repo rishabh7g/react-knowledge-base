@@ -2,8 +2,10 @@
   "name": "@rishabh/monorepo-root",
   "private": true,
   "scripts": {
-    "start": "lerna exec --scope @rishabh/react-forms -- yarn start",
-    "build": "lerna exec --scope @rishabh/react-forms -- yarn build"
+    "start-react-forms": "lerna exec --scope @rishabh/react-forms -- yarn start",
+    "start-react-axios": "lerna exec --scope @rishabh/react-axios -- yarn start",
+    "build-react-forms": "lerna exec --scope @rishabh/react-forms -- yarn build",
+    "build-react-axios": "lerna exec --scope @rishabh/react-axios -- yarn build"
   },
   "devDependencies": {
     "craco": "^0.0.3",
