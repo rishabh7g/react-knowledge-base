@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Redirect, Route, Switch } from 'react-router-dom';
 
 if (process.env.REACT_APP_API_MOCKING === 'enabled') {
   require('src/mocks');
@@ -14,7 +15,14 @@ function App() {
 
   return (
     <div className='App'>
-      Axios <p>{JSON.stringify(res)}</p>
+      <div className='container mt-3'>
+        <Switch>
+          <Route path='/' component={TutorialsList} />
+          <Route path='/add' component={AddTutorial} />
+          <Route path='/tutorials/:id' component={Tutorial} />
+          <Redirect to='/' />
+        </Switch>
+      </div>
     </div>
   );
 }
