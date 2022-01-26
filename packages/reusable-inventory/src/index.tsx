@@ -1,4 +1,5 @@
 import { Button } from './components/button';
 import * as util from './util';
-
-export { Button, util };
+import * as types from './types/axios';
+import { useAxios } from './hooks/useAxios';
+export { Button, util, useAxios, types };
