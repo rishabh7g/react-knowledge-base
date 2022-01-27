@@ -26,12 +26,12 @@ export const useAxios = <T,>({
       setStatus(STATUS_TYPE.LOADING);
       axios[method](url, JSON.parse(headers), JSON.parse(body))
         .then((res) => {
-          setStatus(STATUS_TYPE.SUCCESS);
           setResponse(res.data);
+          setStatus(STATUS_TYPE.SUCCESS);
         })
         .catch((err) => {
-          setStatus(STATUS_TYPE.FAILED);
           setError(err);
+          setStatus(STATUS_TYPE.FAILED);
         });
     };
     fetchData();
