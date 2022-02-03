@@ -3,6 +3,10 @@ import FetchExample from 'src/page/fetch';
 import FormExample from 'src/page/form';
 import Home from 'src/page/home';
 
+if (process.env.REACT_APP_API_MOCKING === 'enabled') {
+  require('src/mocks');
+}
+
 function App() {
   return (
     <div className='App'>
