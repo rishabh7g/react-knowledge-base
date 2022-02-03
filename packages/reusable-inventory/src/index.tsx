@@ -1,6 +1,8 @@
 import { Button } from './components/button';
-import * as util from './util';
-import * as types from './types/axios';
-import { useAxios } from './hooks/useAxios';
 import { Fetch } from './components/fetch';
-export { Button, util, useAxios, types, Fetch };
+import { Loading } from './components/loading';
+import { useAxios } from './hooks';
+import { METHOD_TYPE, STATUS_TYPE } from './types';
+import * as util from './util';
+
+export { Button, util, useAxios, Loading, METHOD_TYPE, STATUS_TYPE, Fetch };
