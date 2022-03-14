@@ -10,4 +10,4 @@ I've created this repository to document all the lessons I learned in React. It'
 
 
 
-
+Changes for git rebase - master
