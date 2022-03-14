@@ -6,7 +6,7 @@ I've created this repository to document all the lessons I learned in React. It'
 ![](https://img.shields.io/travis/rishabh7g/react-knowledge-base)
 
 
-Changes for git rebase-3
+Changes for git rebase-4
 
 
 
